@@ -27,8 +27,7 @@ app.get('/', function(req, res) {
         if (err) {
             console.log(err);
             res.render('step1', {
-              
-                error : err.errors[0].description
+              error : err.errors[0].description
             });
         } else {
             console.log(response);
